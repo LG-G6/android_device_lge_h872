@@ -1,5 +1,5 @@
 #
-# Copyright 2017-2020 The LineageOS Project
+# Copyright 2022 The RevengeOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -18,11 +18,14 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common RevengeOS stuff.
+$(call inherit-product, vendor/revengeos/config/common.mk)
 
 # Inherit from h872 device
 $(call inherit-product, device/lge/h872/device.mk)
+
+# RevengeOS variables
+TARGET_BOOT_ANIMATION_RES := 1440
 
 # Security patch level
 PLATFORM_SECURITY_PATCH_OVERRIDE := 2018-10-01
@@ -30,7 +33,7 @@ VENDOR_SECURITY_PATCH := $(PLATFORM_SECURITY_PATCH_OVERRIDE)
 
 # Set those variables here to overwrite the inherited values.
 PRODUCT_DEVICE := h872
-PRODUCT_NAME := lineage_h872
+PRODUCT_NAME := revengeos_h872
 PRODUCT_BRAND := lge
 PRODUCT_MODEL := LG-H872
 PRODUCT_MANUFACTURER := LGE

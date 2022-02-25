@@ -14,8 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_h872.mk
+    $(LOCAL_DIR)/revengeos_h872.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_h872-userdebug \
-    lineage_h872-eng
+    revengeos_h872-userdebug \
+    revengeos_h872-user \
+    revengeos_h872-eng
