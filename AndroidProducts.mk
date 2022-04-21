@@ -14,8 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_h872.mk
+    $(LOCAL_DIR)/evolution_h872.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_h872-userdebug \
-    lineage_h872-eng
+    evolution_h872-user \
+    evolution_h872-userdebug \
+    evolution_h872-eng
